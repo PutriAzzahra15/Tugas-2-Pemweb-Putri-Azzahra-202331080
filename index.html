@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+    <link rel="stylesheet" href="style.css"
+
+</head>
+<body>
+    <h1>Formulir Pemesanan Tas</h1>
+    <form action="Terima kasih.html">
+        <fieldset>
+            <label for="nama">Nama Pemesanan</label>
+            <input type="text" name="nama" id="nama" required autofocus>
+            <br><br>
+            <label for="alamat">Alamat Pengirim</label>
+            <textarea name="alamat" id="alamat" cols="20"></textarea>
+            <br><br>
+            <label for="nomor">Nomor Telepon</label>
+            <input type="text" name="nomor" id="nomor" placeholder="Silahkan masukan nomor anda" pattern="[0-9]{12}" required title="Harus diisi 12 angka">
+            <br><br>
+            <label for="tanggalpemesanan">Tanggal Pemesanan</label>
+            <input type="date" name="tanggalpemesanan" id="tanggalpemesanan">
+            <br><br>
+            <label for="tanggalpengiriman">Tanggal Pengiriman</label>
+            <input type="date" name="tanggalpengiriman" id="tanggalpengiriman">
+            <br><br>
+            <label for="jk">Jenis Tas</label>
+            <select name="jk" id="jk">
+                <option value="tote Bag">Tote Bag</option>
+                <option value="backpack">Back Pack</option>
+                <option value="slingbag">Sling Bag</option>
+            </select>
+            <br><br>
+            <label for="merektas">Merek Tas</label>
+            <input type="text" name="merektas" id="merektas" required autofocus>
+            <br><br>
+            <label for="np">Jumlah Pemesanan</label>
+            <input type="text" name="np" id="np">
+            <br><br>
+            <label for="at">Garansi Tambahan</label>
+            <input type="radio" name="at" id="at" value="ya"> <label for="ya">Ya</label>
+            <input type="radio" name="at" id="at" value="tidak"> <label for="tidak">Tidak</label>
+            <br><br>
+            <label for="ck">Catatan Khusus</label>
+            <input type="text" name="ck" id="ck" >
+            <br><br>
+            <input type="submit" value="Simpan">
+        </fieldset>
+    </form>
+</body>
+</html>
+</html>
